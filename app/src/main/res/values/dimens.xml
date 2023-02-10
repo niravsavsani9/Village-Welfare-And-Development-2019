@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Activity Background Image view-->
+    <dimen name="activity_background_imgview_hight">@dimen/_300sdp</dimen>
+
+    <!-- Text view(description)-->
+    <dimen name="txtview_disc_margin_start_end">@dimen/_32sdp</dimen>
+    <dimen name="txtview_disc_margin_top">@dimen/_16sdp</dimen>
+
+    <!-- cardview -->
+    <dimen name="cardview_margin_start_end">@dimen/_50sdp</dimen>
+    <dimen name="cardview_margin_top">@dimen/_28sdp</dimen>
+    <dimen name="cardView_padding">@dimen/_14sdp</dimen>
+    <dimen name="cardView_corner_radius">@dimen/_16sdp</dimen>
+    <dimen name="cardView_elevation">5dp</dimen>
+
+    <!-- Root constraint layout -->
+    <dimen name="All_Side_Padding">@dimen/_8sdp</dimen>
+    <dimen name="constraint_margin_top">@dimen/_16sdp</dimen>
+    <dimen name="drawable_padding">@dimen/_8sdp</dimen>
+
+    <!-- Image view(Logo) -->
+    <dimen name="logo_height_width">@dimen/_50sdp</dimen>
+    <dimen name="logo_margin_top">@dimen/_30sdp</dimen>
+
+</resources>

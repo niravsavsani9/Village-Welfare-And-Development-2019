@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF03A9F4</color>
+    <color name="colorPrimaryDark">#FF03A9F4</color>
+    <color name="colorAccent">#64b5f6</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="aqua">#33c9dc</color>
+    <color name="aqua1">#90caf9</color>
+    <color name="accept">#b2ff59</color>
+    <color name="progress">#bbdefb</color>
+    <color name="reject">#f48fb1</color>
+</resources>

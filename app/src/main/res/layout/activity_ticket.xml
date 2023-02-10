@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Root Constraint Layout -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_registerIssue_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flag5">
+
+    <ImageView
+        android:id="@+id/registerIssue_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="#80ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Cardview -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/registerIssue_cardview"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_420sdp"
+        android:padding="@dimen/cardView_padding"
+        app:cardCornerRadius="@dimen/cardView_corner_radius"
+        app:cardElevation="@dimen/cardView_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerIssue_imageview">
+
+        <!-- Constraint layout of cardview-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/registerIssue_sub_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/All_Side_Padding">
+
+            <TextView
+                android:id="@+id/registerIssue_select_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Select Category"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Issue Spinner -->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/registerIssue_issueSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/category"
+                app:layout_constraintEnd_toStartOf="@+id/registerIssue_citySpinner"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_select_category"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_select_category" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/registerIssue_citySpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:entries="@array/city"
+                app:layout_constraintBottom_toBottomOf="@+id/registerIssue_issueSpinner"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_select_category"
+                app:layout_constraintStart_toEndOf="@+id/registerIssue_issueSpinner"
+                app:layout_constraintTop_toTopOf="@+id/registerIssue_issueSpinner" />
+
+            <EditText
+                android:id="@+id/registerIssue_issueSpinner_coustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Enter Issue"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/registerIssue_issue_desc"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_citySpinner"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_issueSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_issueSpinner" />
+
+            <!-- Issue Description -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/registerIssue_issue_desc"
+                style="@style/coustom_TextInput_Layout_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="200"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@+id/registerIssue_select_image"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_issueSpinner_coustom"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_issueSpinner_coustom"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_issueSpinner_coustom">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/registerIssue_sub_issue_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="Issue Description"
+                    android:inputType="textMultiLine"
+                    android:maxLength="200"
+                    android:maxLines="5"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/registerIssue_select_image"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Attach Image"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/registerIssue_issueImage"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_issue_desc"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_issue_desc"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_issue_desc" />
+
+            <ImageView
+                android:id="@+id/registerIssue_issueImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@android:mipmap/sym_def_app_icon"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_select_image"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_select_image"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_select_image" />
+
+
+            <Button
+                android:id="@+id/registerIssue_btn_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_submit"
+                android:text="S u b m i t"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/registerIssue_issueImage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/registerIssue_issueImage"
+                app:layout_constraintTop_toBottomOf="@+id/registerIssue_issueImage"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

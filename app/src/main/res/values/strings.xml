@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Login Page -->
+    <string name="app_name">Gram Mitra</string>
+    <string name="login_user_hint">Email ID</string>
+    <string name="login_password_hint">Password</string>
+    <string name="forgot_password_txt">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="account_message">Don\'t have an account ? </string>
+    <string name="google_sign_text">google sign in</string>
+
+    <!-- Registration page -->
+    <string name="reg_username_hint">Enter Username</string>
+    <string name="reg_email_hint">Enter Email Address</string>
+    <string name="reg_password_hint">Enter password</string>
+    <string name="reg_enter_age_hint">Enter Age</string>
+    <string name="reg_mobile_no_hint">Enter Mobile no.</string>
+    <string name="registration_Info"><![CDATA[Here you have to Register your details for future updates or may you have to login in this app & thank you being with us.]]></string>
+    <string name="reg_account_message">do you have google account ?</string>
+    <string name="register">Register</string>
+    <string name="register_here">Register here</string>
+
+    <!-- Splash Activity -->
+    <string name="goverment_helpline_centre">Gram Mitra Help Centre 2019</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- Forgot Password Activity -->
+    <string name="forgot_password_info">Forgot password page may need your email address to reset your password.</string>
+    <string name="forgot_new_password_hint">Enter new password</string>
+    <string name="forgot_otp">Enter OTP</string>
+    <string name="submit">Submit</string>
+
+    <!-- used in every activity -->
+    <string name="blank_image">Image not displayed</string>
+    <string name="demo_issue_desc"><![CDATA[Hello sir, I\'m facing Water Supply issue since 2 days & nobody even notice that water is wasting from road pipes so can you please request to higher authority who can fix it, thank you & have a nice day sir]]></string>
+
+    <array name="category">
+        <item>Electricity</item>
+        <item>Water Supply</item>
+        <item>Cleanliness</item>
+        <item>Road/Construction</item>
+        <item>Health Care</item>
+        <item>Education</item>
+        <item>Other</item>
+    </array>
+
+    <array name="city">
+        <item>Padra</item>
+        <item>kawant</item>
+        <item>Karjan</item>
+        <item>Jetpur</item>
+        <item>Dabhoi</item>
+        <item>Naswadi</item>
+        <item>Sankheda</item>
+        <item>Other</item>
+    </array>
+
+</resources>

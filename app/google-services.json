@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "486842845322",
+    "firebase_url": "https://gram-mitra-76595.firebaseio.com",
+    "project_id": "gram-mitra-76595",
+    "storage_bucket": "gram-mitra-76595.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486842845322:android:f4f1c27aa115995b",
+        "android_client_info": {
+          "package_name": "grammitra2019.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486842845322-l8volusbi54q5j7to729mboie05k4rsr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "grammitra2019.com",
+            "certificate_hash": "62981eec791c6737f710c5c9cb4503f604cc193a"
+          }
+        },
+        {
+          "client_id": "486842845322-d0hah943lgh6oqll70qulv35obpf40et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHHAzJk3z54c2fnXKpsi1jRRLT4p1vDrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486842845322-d0hah943lgh6oqll70qulv35obpf40et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
